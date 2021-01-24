@@ -1,5 +1,5 @@
 # seximal-columns
-Framework built with viewport width scaling, height independent, n/6ths elements.
+CSS framework built with viewport width scaling, height independent, n/6ths elements. It's not lightweight, requires javascript and it's not even that simple to work with. I'm not sure I understand the term framework correctly.
 
 ## Bugs
  * Spoilers with nested .spoiler-toggle's will toggle the parent .spoiler when clicked.
@@ -19,5 +19,7 @@ Framework built with viewport width scaling, height independent, n/6ths elements
  * Write a better README.md
  * Write a homepage.md
  * Learn more KSS syntax
-   * Test using seximal-columns as the KSS docs theme
- * Figure out how to best release seximal-columns without all the node bullshit bundled with it
+   * Test using seximal-columns as the KSS docs theme.
+   * Upon further investigation it looks like KSS is not suitable for documenting a framework. Or I just don't know how to use it.
+ * Figure out how to best release seximal-columns without all the node and git bullshit bundled with it.
+   * Oh I know, remove KSS and the node bullshit and you're left with only the usual git bullshit :D
