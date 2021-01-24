@@ -6,13 +6,13 @@ Framework built with viewport width scaling, height independent, n/6ths elements
 
 ## Features 2 come
  * Form element styles
-   * <pre> <input> <submit> etc. </pre>
+   * ``` <input> <submit> etc. ```
  * Better header and footer handling
    * Header is currently mandatory-ish
    * Footer could be replaced with bottom-padding on .main
  * .sexc-scrollable > .column elements should not be 100% on mobile. Scrollable sections are used for galleries etc, would make sense to be able to have different width gallery elements.
  * List element styles
-   * <pre> <ul>, <ol> and <li> </pre>
+   * ```<ul>, <ol> and <li> ```
  * Better default theme. Current is kinda coffee like and makes you think I like coffee or something.
 
 ## TO-DO
