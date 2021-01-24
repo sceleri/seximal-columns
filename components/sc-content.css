@@ -1,0 +1,105 @@
+/*
+Top level heading h1
+
+Markup:
+<h1>Top level heading</h1>
+
+Styleguide Content.Headings
+*/
+h1 {
+    line-height: var(--heading1-font);
+    font-size: var(--heading1-font);
+}
+
+/*
+Sub heading h2
+
+Markup:
+<h2>Top level heading</h2>
+
+Styleguide Content.Headings
+*/
+h2 {
+    line-height: var(--heading2-font);
+    font-size: var(--heading2-font);
+}
+
+/*
+Sub heading h3
+
+Markup:
+<h3>Top level heading</h3>
+
+Styleguide Content.Headings
+*/
+h3 {
+    line-height: var(--heading3-font);
+    font-size: var(--heading3-font);
+}
+
+/*
+Sub heading h4
+
+Markup:
+<h4>Top level heading</h4>
+
+Styleguide Content.Headings
+*/
+h4 {
+    line-height: var(--heading4-font);
+    font-size: var(--heading4-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+code,
+.syntax {
+    height: auto;
+    width: auto;
+    margin: var(--text-margin) 0;
+    padding: 0;
+}
+
+a,
+a:visited,
+a:focus,
+a:active {
+    cursor: pointer;
+}
+
+/*
+Syntax
+
+Style class to highlight syntax. Highlighted style is defined in the users local style.
+
+Markup:
+<p class="syntax">I am a code snipper</p>
+<code>I'm another code snippet</code>
+
+Styleguide Flair.Modifiers
+*/
+code,
+.syntax {
+    font-family: var(--monospace-font-face);
+    box-sizing: border-box;
+    padding: 0.25rem;
+}
+
+/*
+Centered
+
+Style class to make text align to center. Also makes the text element 100% wide.
+
+Markup:
+<p class="centered">Centered text</p>
+
+Styleguide Flair.Modifiers
+*/
+.centered {
+    text-align: center;
+    width: 100%;
+}

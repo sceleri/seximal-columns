@@ -1,0 +1,238 @@
+/*
+Indent sections
+
+Modifier class to make child sections padded from the left. Creates a "nested list" look with nested sections.
+
+Markup:
+<div class="section indent-sections">This section will indent it's children's children</div>
+
+Styleguide Flair.Indent
+*/ 
+.indent-sections .section .section {
+    padding-left: var(--indent-amount);
+}
+
+/*
+Section
+
+A full-width, variable height divider. A little margin to space them out.
+
+.sexc-half  - 0.5 sixths tall
+.sexc-1     - 1 sixth tall
+.sexc-2     - 2 sixths tall
+.sexc-3     - 3 sixths tall
+.sexc-4     - 4 sixths tall
+.sexc-5     - 5 sixths tall
+.sexc-6     - 6 sixths tall
+
+Markup:
+<div class="section {{modifier_class}}">Section div</div>
+
+Styleguide Alignment.Section
+*/
+.section {
+    display: block;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    margin: var(--section-margin) 0;
+}
+
+.section.sexc-half {
+    min-height: calc(100vw / 6 * 0.5);
+    height: calc(100vw / 6 * 0.5);
+    max-height: calc(100vw / 6 * 0.5);
+}
+
+.section.sexc-1 {
+    min-height: calc(100vw / 6 * 1);
+    height: calc(100vw / 6 * 1);
+    max-height: calc(100vw / 6 * 1);
+}
+
+.section.sexc-2 {
+    min-height: calc(100vw / 6 * 2);
+    height: calc(100vw / 6 * 2);
+    max-height: calc(100vw / 6 * 2);
+}
+
+.section.sexc-3 {
+    min-height: calc(100vw / 6 * 3);
+    height: calc(100vw / 6 * 3);
+    max-height: calc(100vw / 6 * 3);
+}
+
+.section.sexc-4 {
+    min-height: calc(100vw / 6 * 4);
+    height: calc(100vw / 6 * 4);
+    max-height: calc(100vw / 6 * 4);
+}
+
+.section.sexc-5 {
+    min-height: calc(100vw / 6 * 5);
+    height: calc(100vw / 6 * 5);
+    max-height: calc(100vw / 6 * 5);
+}
+
+.section.sexc-6 {
+    min-height: calc(100vw / 6 * 6);
+    height: calc(100vw / 6 * 6);
+    max-height: calc(100vw / 6 * 6);
+}
+
+/*
+Column
+
+A controlled width, variable height divider. When combined with .sexc-n, the column takes up n sixths of the viewport width. On mobile all columns are 100% wide and padded.
+
+.sexc-half  - 0.5 sixths wide
+.sexc-1     - 1 sixth wide
+.sexc-2     - 2 sixths wide
+.sexc-3     - 3 sixths wide
+.sexc-4     - 4 sixths wide
+.sexc-5     - 5 sixths wide
+.sexc-6     - 6 sixths wide
+
+Markup:
+<div class="column {{modifier_class}}">Column div</div>
+
+Styleguide Alignment.Column
+*/
+
+.column {
+    display: block;
+    min-height: auto;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    padding: 0rem var(--mobile-column-padding);
+}
+
+.column.sexc-half {
+    min-width: 0;
+    width: 0;
+    max-width: 0;
+    padding: 0rem 0rem;
+    overflow: hidden;
+}
+
+@media (any-hover: hover) {
+
+    /*
+    * Media query to only scale columns on desktop.
+    */
+
+    .column {
+        min-height: 100%;
+        padding: 0;
+    }
+
+    .column.sexc-half {
+        min-width: calc(100% / 6 * 0.5);
+        width: calc(100% / 6 * 0.5);
+        max-width: calc(100% / 6 * 0.5);
+    }
+
+    .column.sexc-1 {
+        min-width: calc(100% / 6 * 1);
+        width: calc(100% / 6 * 1);
+        max-width: calc(100% / 6 * 1);
+    }
+
+    .column.sexc-2 {
+        min-width: calc(100% / 6 * 2);
+        width: calc(100% / 6 * 2);
+        max-width: calc(100% / 6 * 2);
+    }
+
+    .column.sexc-3 {
+        min-width: calc(100% / 6 * 3);
+        width: calc(100% / 6 * 3);
+        max-width: calc(100% / 6 * 3);
+    }
+
+    .column.sexc-4 {
+        min-width: calc(100% / 6 * 4);
+        width: calc(100% / 6 * 4);
+        max-width: calc(100% / 6 * 4);
+    }
+
+    .column.sexc-5 {
+        min-width: calc(100% / 6 * 5);
+        width: calc(100% / 6 * 5);
+        max-width: calc(100% / 6 * 5);
+    }
+
+    .column.sexc-6 {
+        min-width: calc(100% / 6 * 6);
+        width: calc(100% / 6 * 6);
+        max-width: calc(100% / 6 * 6);
+    }
+
+}
+
+/*
+sexc-scroll
+
+Special modifier class that makes sections scrollable. All content (including columns) inside scrollable sections will be horizontally scrollable.
+
+Markup:
+<div class="section sexc-scroll">Scrollable section :D</div>
+
+Styleguide Alignment.Containers
+*/
+.section.sexc-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: var(--seximal-container-margin) 0rem;
+}
+
+/*
+sexc-centered
+
+Special modifier class that makes sections clip their contents.
+
+Markup:
+<div class="section sexc-noscroll">Clipped section :D</div>
+
+Styleguide Alignment.Containers
+*/
+.section.sexc-noscroll {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: var(--seximal-container-margin) 0rem;
+}
+
+/*
+sexc-centered
+
+Special modifier class that makes sections center their contents.
+
+Markup:
+<div class="section sexc-centered">Centered section :D</div>
+
+Styleguide Alignment.Containers
+*/
+.section.sexc-centered {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    justify-content: center;
+    margin: var(--seximal-container-margin) 0rem;
+}
+
+/*
+sexc-scroll > column
+
+Sets flex growth for sexc-scroll child columns.
+
+Styleguide Alignment.Containers
+*/
+.section.sexc-scroll > .column {
+    flex: 0 0 auto;
+}

@@ -1,0 +1,49 @@
+/* local style, not part of seximal-columns */
+
+/* import sushi-colors.css */
+@import "./sushi-colors.css";
+
+body {
+    background: var(--fazer);
+    font-family: Helvetica;
+}
+
+header {
+    background-color: var(--bark);
+}
+
+.sc-docs .section {
+    padding-left: 3rem;
+    margin-bottom: 1rem;
+}
+
+.sc-docs .section p {
+    margin: 0.5rem 1rem;
+}
+
+.sc-docs .section code {
+    margin: 0.5rem 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+span,
+p,a,
+.section {
+    color: var(--pale-vanilla);
+}
+
+code, .syntax {
+    color: var(--pale-ocean);
+    background-color: var(--bark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--pale-vanilla);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bad-coco);
+}

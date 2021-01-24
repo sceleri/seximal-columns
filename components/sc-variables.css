@@ -1,0 +1,33 @@
+:root {
+    /* Header variables */
+    --header-height: 3rem;
+    --header-padding: 1rem;
+    --header-true-height: calc(var(--header-height) + (2 * var(--header-padding)));
+
+    --footer-height: 3rem;
+
+    /* Font variables */
+    --font-face: Helvetica;
+    --monospace-font-face: "Courier New";
+    --main-font-size: 3rem;
+    --heading1-font: calc(var(--main-font-size) / 1.00);
+    --heading2-font: calc(var(--main-font-size) / 1.50);
+    --heading3-font: calc(var(--main-font-size) / 2.00);
+    --heading4-font: calc(var(--main-font-size) / 2.50);
+
+    /* Text element variables */
+    --text-margin: 0.25rem;
+
+    /* Section containeru variables */
+    --section-margin: 1rem;
+    --indent-amount: 1rem;
+    --seximal-container-margin: 1rem;
+
+    /* Spoiler variables */
+    --spoiler-closed-height: 2rem;
+    --spoiler-margin: var(--section-margin);
+    --spoiler-true-height: calc(var(--spoiler-margin) * 2 + var(--spoiler-closed-height));
+    
+    /* Mobile specific variables */
+    --mobile-column-padding: 10vw;
+}

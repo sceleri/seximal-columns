@@ -1,0 +1,26 @@
+/* global namespace pollution B) */
+
+:root {
+    /* the brows */
+    --bark: #3A2A22;
+    --fazer: #503C32;
+    --bad-coco: #574F41;
+    /* the blues */
+    --squire: #18213D;
+    --squire-lite: #1A2545;
+    /* the pales */
+    --purp: #7673A9;
+    --pale-purp: #D0DDFF;
+    --pale-ocean: #97C5C7;
+    --pale-blush: #FFD6D6;
+    --pale-vanilla: #FFFAE8;
+    /* the greens */
+    --mint: #88EC78;
+    --leafy: #ACFF6D;
+    --evergreen: #4BAE37;
+    /* the fruits */
+    --banana-flesh: #FFCF7B;
+    --orange: #F9BA30;
+    --mango: #FF9D5F;
+    --lingonberry: #FC3B4C;
+}

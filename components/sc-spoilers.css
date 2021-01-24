@@ -1,0 +1,94 @@
+/*
+Spoiler toggle
+
+Special function class, every element marked with this class will toggle all children marked with .spoiler.
+
+Markup:
+<button class="spoiler-toggle">Open spoiler</spoiler>
+
+Styleguide Addons.Spoiler
+*/
+.spoiler-toggle {
+    cursor: pointer;
+}
+
+/*
+Spoiler section
+
+No idea, will have to educate myself on this.
+
+Markup:
+<div class="spoiler-section">I'm a spoiler section</div>
+
+Styleguide Addons.Spoiler
+*/
+.spoiler-section {
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+/*
+Spoiler
+
+Special function class, all classes marked with .spoiler will get toggled when the parent .spoiler-toggle is clicked. All spoilers must also have a .spoiler-open or .spoiler-closed class.
+
+Markup:
+<div class="spoiler">I'm a spoiler.</div>
+
+Styleguide Addons.Spoiler
+*/
+.spoiler {
+    background-color: #00000022;
+    margin: var(--section-margin) 0;
+    padding: var(--section-margin);
+    box-sizing: border-box;
+    position: relative;
+}
+
+/*
+Spoiler open
+
+Spoilers marked with .spoiler-open are open by default.
+
+Markup:
+<div class="spoiler spoiler-open">I'm an open spoiler.</div>
+
+Styleguide Addons.Spoiler
+*/
+.spoiler-open {
+    max-height: auto;
+}
+
+/*
+Spoiler open
+
+Spoilers marked with .spoiler-open are closed by default.
+
+Markup:
+<div class="spoiler spoiler-closed">I'm a closed spoiler.</div>
+
+Styleguide Addons.Spoiler
+*/
+.spoiler-closed {
+    height: var(--spoiler-true-height);
+    max-height: var(--spoiler-true-height);
+    overflow: hidden;
+}
+
+.spoiler-open::before,
+.spoiler-closed::before {
+    display: block;
+    font-size: calc(var(--spoiler-closed-height) / 1.5);
+    font-family: var(--font-face);
+    line-height: var(--spoiler-closed-height);
+}
+
+.spoiler-open::before {
+    content: "Spoiler (open)";
+}
+
+.spoiler-closed::before {
+    content: "Spoiler (closed)";
+    height: 100vh;
+}

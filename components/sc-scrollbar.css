@@ -1,0 +1,46 @@
+/*
+webkit scrollbar
+
+Sets the width and height of the scrollbar to 4px.
+
+Styleguide Addons.Scrollbar
+*/
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+/*
+webkit scrollbar button
+
+Sets the scrollbar buttons to 4px.
+
+Styleguide Addons.Scrollbar
+*/
+::-webkit-scrollbar-button {
+    display: none;
+    width: 4px;
+    height: 4px;
+}
+
+/*
+webkit scrollbar thumb
+
+Sets the scrollbar thumbs to black.
+
+Styleguide Addons.Scrollbar
+*/
+::-webkit-scrollbar-thumb {
+    background: black;
+}
+
+/*
+webkit scrollbar track
+
+Sets the scrollbar track to gray.
+
+Styleguide Addons.Scrollbar
+*/
+::-webkit-scrollbar-track {
+    background: gray;
+}
